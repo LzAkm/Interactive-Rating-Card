@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img, picture, svg{
+    display: block;
+    max-width: 100%;
+}
+
+:root{
+    --white: hsl(0, 0%, 100%);
+    --orange: hsl(25, 97%, 53%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --wight-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(218, 10%, 22%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+    --font-family: 'Overpass', sans-serif;
+}
+
+body{
+    margin: 1rem;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-family: var(--font-family);
+    background-color: var(--very-dark-blue);
+}
+
+
+
+/* Rating Card */
+#rating_start_card{
+    gap: 1.8rem;
+    padding: 2rem;
+    display: flex;
+    max-width: 500px;
+    color: var(--white);
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--dark-blue);
+}
+
+#rating_start_card .star_icon img{
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: var(--medium-grey);
+}
+
+#rating_start_card p{
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--wight-grey);
+}
+
+#rating_start_card .rating{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#rating_start_card .rating button{
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    font-weight: 700;
+    border-radius: 50%;
+    color: var(--white);
+    padding-top: 0.2rem;
+    font-family: var(--font-family);
+    background-color: var(--medium-grey);
+}
+
+#rating_start_card .rating button:hover{
+    cursor: pointer;
+    background-color: var(--orange);
+}
+
+#rating_start_card .rating button:focus{
+    background-color: var(--wight-grey);
+}
+
+#rating_start_card #submit{
+    border: 0;
+    height: 50px;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: 1px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-family: var(--font-family);
+    background-color: var(--orange);
+}
+
+#rating_start_card #submit:hover{
+    color: var(--orange);
+    background-color: var(--white);
+}
+
+
+/* Rating thank u card */
+#rating_thank_card{
+    gap: 1.8rem;
+    display: flex;
+    display: none;
+    padding: 2rem;
+    max-width: 500px;
+    text-align: center;
+    color: var(--white);
+    border-radius: 10px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--dark-blue);
+}
+
+#rating_thank_card p{
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--wight-grey);
+}
+
+#rating_thank_card p.selection{
+    margin-bottom: 1rem;
+    padding-top: 0.6rem;
+    border-radius: 2rem;
+    padding-left: 0.7rem;
+    color: var(--orange);
+    padding-right: 0.7rem;
+    padding-bottom: 0.5rem;
+    background-color: var(--medium-grey);
+}
+
+#rating_thank_card .illustration{
+    margin-bottom: 1rem;
+}
